@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="minHeight">48dp</dimen>
+    <dimen name="paddingTop">16dp</dimen>
+    <dimen name="layoutMargin">10dp</dimen>
+    <dimen name="namePaddingTop">30dp</dimen>
+</resources>

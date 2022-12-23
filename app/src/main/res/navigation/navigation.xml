@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.udacityshoestore.screens.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:label="Login screen" >
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.udacityshoestore.screens.WelcomeFragment"
+        android:label="Welcome screen"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListFragment"
+        tools:layout="@layout/fragment_shoe_list"
+        android:name="com.example.udacityshoestore.screens.ShoeListFragment"
+        android:label="Your shoe list" >
+        <action
+            android:id="@+id/action_shoeListFragment_to_addShoeFragment"
+            app:destination="@id/addShoeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/addShoeFragment"
+        android:name="com.example.udacityshoestore.screens.AddShoeFragment"
+        android:label="Add shoe data screen"
+        tools:layout="@layout/fragment_add_shoe" />
+</navigation>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Used Linear Layout because the view were oriented vertically -->
+    <data>
+        <import type="com.example.udacityshoestore.screens.components.IntConverter"/>
+        <variable
+            name="shoe"
+            type="com.example.udacityshoestore.models.Shoe" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.AddShoeFragment">
+
+    <!-- Add Edit text view to enter shoe object data -->
+    <EditText
+        android:id="@+id/shoe_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@={shoe.name}"
+        android:autofillHints=""
+        android:background="@drawable/custom_text_field_border"
+        android:hint="@string/shoe_name"
+        android:inputType="text"
+        android:paddingTop="@dimen/namePaddingTop"
+        android:textAlignment="center"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/shoe_size_edit_text"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/layoutMargin"
+        android:background="@drawable/custom_text_field_border"
+        android:hint="@string/shoe_size"
+        android:text="@={IntConverter.intToString(shoe.size)}"
+        android:inputType="numberDecimal"
+        android:minHeight="@dimen/minHeight"
+        android:paddingTop="@dimen/paddingTop"
+        android:textAlignment="center"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/shoe_company_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layoutMargin"
+        android:background="@drawable/custom_text_field_border"
+        android:hint="@string/shoe_company"
+        android:text="@={shoe.company}"
+        android:inputType="text"
+        android:minHeight="@dimen/minHeight"
+        android:paddingTop="@dimen/paddingTop"
+        android:textAlignment="center"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/shoe_description_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layoutMargin"
+        android:text="@={shoe.description}"
+        android:background="@drawable/custom_text_field_border"
+        android:hint="@string/shoe_description"
+        android:inputType="text"
+        android:minHeight="@dimen/minHeight"
+        android:paddingTop="@dimen/paddingTop"
+        android:textAlignment="center"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/add_shoe_object_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_shoe" />
+
+</LinearLayout>
+</layout>

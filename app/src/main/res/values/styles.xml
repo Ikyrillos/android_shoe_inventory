@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mail">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginTop">308dp</item>
+        <item name="android:background">@drawable/custom_text_field_border</item>
+        <item name="android:ems">10</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

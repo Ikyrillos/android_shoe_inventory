@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Udacity ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="hello_string">Hello User!</string>
+    <string name="welcome_msg">Welcome to your custom shoe store.</string>
+    <string name="instruction_txt">1.go to add shoe screen \n\n 2.fill required data \n\n 3.click add button \n\n note: if you want to log out you can so from the menu button in the app bar</string>
+    <string name="shoe_title_msg">Your shoe list</string>
+    <string name="add_new_shoe_msg">in case of empty list, please consider adding a shoe by using add button</string>
+    <string name="go_to_shoe_list_button_txt">Go to shoe list</string>
+    <string name="add_shoe_button_txt">Add shoe</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="shoe_size">shoe size</string>
+    <string name="shoe_company">shoe company</string>
+    <string name="shoe_description">shoe description</string>
+    <string name="log_out">Log out</string>
+    <string name="add_shoe">Add shoe</string>
+    <string name="any">ANY</string>
+</resources>
