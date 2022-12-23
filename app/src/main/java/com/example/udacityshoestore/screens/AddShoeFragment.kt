@@ -23,16 +23,17 @@ class AddShoeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_add_shoe, container, false)
-        val shoeBinding = binding.shoe
+        binding.shoe = singleViewModel.shoe
         binding.addShoeObjectBtn.setOnClickListener {
 
             val shoe = Shoe(
-                shoeBinding.name,
-                shoeBinding.size,
-                shoeBinding.company,
-                shoeBinding.description
+               binding.shoe!!.name,
+                binding.shoe!!.size,
+                binding.shoe!!.company,
+                binding.shoe!!.description
             )
             singleViewModel.addShoe(shoe)
+
             Log.i("AddShoeFragment", "Shoe added to list and shoeList is now ${shoe}")
         }
         return binding.root

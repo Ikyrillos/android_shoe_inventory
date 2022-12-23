@@ -11,12 +11,16 @@ class ShoeListViewModel : ViewModel() {
     val shoeList : LiveData<ArrayList<Shoe>>
         get() = _shoeList
     var shoe = Shoe()
+    fun clearShoe(){
+        shoe = Shoe()
+    }
     init {
         _shoeList.value = ArrayList()
     }
 
     fun addShoe(shoe: Shoe) {
         _shoeList.value?.add(shoe)
+        clearShoe()
         Log.i("ShoeListViewModel", "Shoe added to list and shoeList is now ${_shoeList.value}")
     }
 }
